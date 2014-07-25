@@ -1,0 +1,71 @@
+1. In the title, I assume that LVX is intended to be a Roman numeral. I am certainly not an expert in this field, but I don't believe there is any such Roman numeral as LVX. If the authors mean 55, it should just be LV. If they mean 65, it should be LXV.
+
+-- This was a fake placeholder until the actual number in the paper sequence could be determined. The paper number has been updated to LXII, a legitimate roman numeral.
+
+2. In the second paragraph of 2.1, it would be useful to include a sentence or two describing the main features of the MOSAIC camera. This would help later on when reference is being made to individual chips -- at that stage, unless a reader is already familiar with the MOSAIC camera, they have no idea how many chips it should have or even that it is a multi-chip device.
+
+-- A clarification of MOSAIC instrument specs (8 chips) was added to the 6th paragraph of Section 2.1, within the discussion of chip variations in calibration coefficients.
+
+3. In the next paragraph, it is made clear that there were four short exposures per filter. Is this also the case for long exposures, or was there just one per filter? This is not clear from the text at present.
+
+-- Clarification of the number of images per filter in the long set (4) was added to this paragraph.
+
+4. In the text after the equations 1-5, it's not made clear what was done with the U-band photometry that could not be calibrated. Was this simply discarded such that there was a smaller area of U-band photometry available for analysis?
+
+-- Language has been added that explicitly states the U-band photometry that did not have corresponding calibration data was thrown out from the final set.
+
+5. Perhaps my main comment -- it wasn't clear to me why the U-band photometry is included in the paper in any case. It does not appear to be used at all in the isochrone analysis. The same could also be said for the R-, I-, and H-band photometry. Is there really nothing that can be learned from isochrone analysis including these data? (I suspect U-band could be quite interesting).
+
+-- The MOSAIC data, while improving spatial and wavelength coverge, is too shallow to reach the "splitting" point of the isochrone models. In nearly the entire CMD region covered by the MOSAIC data, there is close agreement between isochrones and observation in all filters. The B-V isochrone is shown for direct comparison to Kalirai's CMD shown later in the paper. CMDs involving the H-band data, J-H or H-K, the observed data show too little color variation to accurately illustrate isochrone shifts.
+
+6. What causes the stratification evident in the U-band panel in the right hand part of Figure 1? If this due to the four different chips? Why is there less stratification in the other pass-bands?
+
+-- The stratification is due to the variation in zero-point errors between chips of the MOSAIC detector, and is apparent in all filters. It is more apparent in the U filter due to the fact that only 4 chips are present in the plot. In the other filters, sources from all 8 chips blend together, making the stratification less apparent.
+
+7. At the start of 2.2, similar to my comment (2) above, it would be useful to provide a sentence or two about the main features of the NEWFIRM camera.
+
+-- Comments have been added to the first paragraph of 2.2 on the physical makeup of the NEWFIRM camera: a grid of four 2k x 2k IR detectors.
+
+8. In 2.3, I didn't understand why, having just calibrated the infrared photometry off the 2MASS catalogue, 2MASS sources were then also included in the merged dataset. From Figure 3 it looks like this is because the new data saturates at quite a faint level. However, this should be explained properly in the text of 2.3.
+
+-- With the length of exposure (600s+) and the size of telescope used (4m), bright stars were saturated within the NEWFIRM images. To recover these bright stars, 2MASS photometry is merged into the final dataset. This is now fully explained in the text.
+
+9. Also in 2.3, it might be a good idea to introduce Table 2. I couldn't find a reference to this table anywhere in the text.
+
+-- Table 2 is now explicitly referenced in the first paragraph of 2.3.
+
+10. In 2.3 it is stated that stars within 10' of NGC 2158 were removed. This ought to be a circular region in Figure 3, but the grey points define a rectangular region instead. Either the text or figure should be fixed to ensure consistency.
+
+-- The figure has been updated to reflect the actual circular region around NGC 2158 that is removed.
+
+11. Also in Figure 3, it might be helpful to mark the centre of M35 (is it at the centre of the plotted field?) as well as a circle indicating the 20' radius from which stars were taken for analysis (as per 2.3). It wasn't clear to me whether the stars plotted in the CMDs of Figure 3 are all detections or only those stars within 20' of M35. Certainly there does not seem to be a very big reduction in the field contamination going from Figure 3 to Figures 5 and 6. Can contamination levels in Figures 5 and 6 be improved?
+
+-- The caption of figure 3 now states that M35 is centered within the plotted area. M35 is a very low latitude cluster (b = 1), so using a simple spatial cut will not remove all of the contamination. Without resorting to more complicated (and unneccesary) statistical subtraction, the large contamination in the CMD cannot be helped.
+
+12. I was confused by some of the information presented in Table 3. There are gaps where it is not clear what physics is used. For example, in the top left cell (Dartmouth, Opacity) what happens at logT = 4.4? Similarly for (Y^2, Opacity), what happens between logT = 3.8 and logT = 4.1? There are more gaps like this in some of the other cells.
+
+-- To avoid discontinuities with switching models, isochrone systems employ a weighted scaling between the systems within this "empty" region.
+
+13. In the caption to Figure 4, "dartmouth" should be capitalised.
+
+-- This is now capitalised.
+
+14. There is much reference throughout Section 4 to stars with masses above and below 0.7 M_sun. It would be very helpful to mark this dividing line on the CMDs in Figures 5 and 6. A simple short line perpendicular to the cluster main sequence would suffice.
+
+-- Dashed lines, indicating the location of the pivotal 0.7 M_sun models, have been added to figures 5 and 6
+
+15. I found Figure 6 much too small. It's difficult to see the necessary details at this size. It should be more like Figure 5.
+
+-- This figure has been expanded to a larger size for enhanced detail.
+
+16. In Figure 6, the caption states that the black line is a hand-drawn empirical ridgeline. But why does it extend past the cut-off to the photometry in the top two CMDs (including an odd turn to the left, where there are no data at all)? Similarly, why does it not extend to the bottom of the photometry in the lower two CMDs? A few details somewhere in the text on how these ridgelines were defined would be helpful.
+
+-- Both ridgelines (B-V and J-K) have been updated to extend to the bottom of the observed data. Previously, the ridgelines were defined with V as the magnitude, which did not have data deep enough for the V vs J-K ridgeline to fit to the bottom. The IR ridgeline was updated to use J as the magnitude, and extended the ridgeline to the observation limit.
+
+17. Why do the Dartmouth and Y^2 isochrones cut off at a much higher level than the other two model sets? Is it something to do with limitations of the atmospheres? If so, why do Y^2 and Dartmouth seem to cut off at different levels in most of the CMDs? In the text is says that Dartmouth models fit well down to V~22 but they never reach this far in the plotted CMDs.
+
+-- Different isochrone models have different minimum masses. Padova and PARSEC sets have a minimum mass of 0.1 M_sun, while Dartmouth has a minimum mass of 0.46 M_sun. This seems to be a limitation of the stellar structure code, not the model atmospheres. Below a certain mass, the structure code no longer converges. The text confusingly stated that the "Y^2 and Dartmouth isochrones fit down to V ~ 22", when it should have stated that "Y^2 and Dartmouth isochrones fit to their faint limits, V ~ 22 and V ~ 19, respectively. The text has been updated to reflect this.
+
+18. There are two bad entries at the top of the bibliography.
+
+-- This seems to be a problem with the apj bibliography style, as it is missing a "FUNCTION {control} { }" statement. Adding it to my local copy of apj.bst removed these strange lines, and I'm not sure if this is also possible when the article is compiled for the print edition.
