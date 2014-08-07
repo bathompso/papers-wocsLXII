@@ -46,14 +46,14 @@ This process is started by testing isochrone models against the open cluster M35
 To provide a comprehensive test of the isochrone models to M35, accurate, multi-wavelength photometry is required. We present new photometry for M35 in both the optical and infrared, used in this analysis.
 
 \begin{figure*} \centering
-\includegraphics[trim = 0mm 5mm 5mm 0mm, clip, width=3.3in]{fig1_a.eps}			% Mosresid.eps
-\includegraphics[trim = 0mm 5mm 5mm 10mm, clip, width=3.3in]{fig1_b.eps}		% MOSphotqual.eps
+\includegraphics[trim = 0mm 20mm 20mm 0mm, clip, width=3.3in]{fig1_a.png}			% Mosresid.png
+\includegraphics[trim = 0mm 20mm 20mm 40mm, clip, width=3.3in]{fig1_b.png}		% MOSphotqual.png
 \caption{\emph{Left:} Residuals for $BVRI$ in calibrating the MOSAIC data. Chip \#1 $R$--band data contains a secondary color transformation to improve the errors in the fit. \emph{Right:} MOSAIC Magnitude vs uncertainty for the combined dataset. Differing transformation errors between chips are visible for each filter. \label{fig:MOSphotometry}}
 \end{figure*}
 
 \begin{figure*} \centering
-\includegraphics[trim = 0mm 5mm 5mm 50mm, clip, width=3.3in]{fig2_a.eps}		% NFMresid.eps
-\includegraphics[trim = 0mm 5mm 5mm 50mm, clip, width=3.3in]{fig2_b.eps}		% NFMphotqual.eps
+\includegraphics[trim = 0mm 20mm 20mm 200mm, clip, width=3.3in]{fig2_a.png}		% NFMresid.png
+\includegraphics[trim = 0mm 20mm 20mm 200mm, clip, width=3.3in]{fig2_b.png}		% NFMphotqual.png
 \caption{\emph{Left:} Residuals between instrumental NEWFIRM magnitudes and 2MASS. \emph{Right:} NEWFIRM Magnitude vs uncertainty for all four pointings on M35.\label{fig:NFMphotometry}}
 \end{figure*}
 
@@ -155,7 +155,7 @@ As before, lower case letters are instrumental magnitudes, while upper case lett
 With 600s or more of exposure time on a 4-m telescope, stars with $J < 13$ are saturated in the NEWFIRM images. In the final dataset, the MOSAIC and NEWFIRM photometry was merged with all `AAA'-quality 2MASS point sources to form a complete picture of the cluster in the optical and near-IR. The merged dataset is shown in table \ref{tab:stubtable}; CMDs and spatial diagrams for this dataset are shown in figure \ref{fig:finalphot}.
 
 \begin{figure*} \centering
-\includegraphics[trim = 0mm 7mm 5mm 5mm, clip, width=6in]{fig3.eps}		% finalphot.eps
+\includegraphics[trim = 0mm 28mm 20mm 20mm, clip, width=6in]{fig3.png}		% finalphot.png
 \caption{CMDs and spatial plots for each of the new datasets. \emph{(a)} Visual CMD of MOSAIC dataset. \emph{(b)} Near-IR CMD of NEWFIRM dataset. Grey points are `AAA'-quality 2MASS magnitudes. \emph{(c)} Spatial plots of MOSAIC detections. A small area around NGC 2158 has been removed, denoted by grey points. \emph{(d)} Spatial plot of NEWFIRM detections. Removed area around NGC 2158 denoted by grey points. M35 is located in the center of the spatial plots. \label{fig:finalphot}}
 \end{figure*}
 
@@ -206,12 +206,12 @@ Many isochrone systems come pre-packaged in rough metallicity grids. For the iso
 Starting with the Dartmouth system's pre-packaged metallicity grid, each isochrone is interpolated in mass, using a common spacing of 0.01 M$_\odot$. For each star in the new isochrone, stellar parameters ($\log g,L,T$) and magnitudes are cubically interpolated to the new mass value. This interpolation only works along the main sequence, where mass increases monotonically. This work is interested in how the isochrone treats the main sequence, and there is little evolution off of the main sequence in a young cluster like M35, so the loss of giants from the isochrone is acceptable. Once all isochrones are on a common mass grid, stellar parameters and magnitudes are quadratically interpolated in metallicity, using the nearest three isochrones in the grid to the desired [Fe/H]. For M35, [Fe/H]$=-0.50$, $+0.07$, $+0.21$ isochrones were used to interpolate the [Fe/H]$=-0.21$ isochrone. Figure \ref{fig:isointerp} shows the results of each of the interpolation steps.
 
 \begin{figure} \centering
-\includegraphics[trim = 0mm 62mm 5mm 5mm, clip, width=3.3in]{fig4.eps}		% isointerp.eps
+\includegraphics[trim = 0mm 248mm 20mm 20mm, clip, width=3.3in]{fig4.png}		% isointerp.png
 \caption{\emph{Left:} Interpolation onto a common mass grid for the [Fe/H]$=+0.07$ Dartmouth isochrone. Black dots are original isochrone grid points, grey are interpolated points in steps of 0.01 M$_\odot$. \emph{Right:} Interpolation in [Fe/H] of dartmouth isochrones to the M35 metallicity. Isochrones in grey are the three closest grid points used to create the interpolated isochrone. Note that interpolated isochrones only exist along the main sequence. All isochrones are for an age of 250 Myr.\label{fig:isointerp}}
 \end{figure}
 
 \begin{figure*} \centering
-\includegraphics[trim = 0mm 30mm 5mm 5mm, clip, width=6in]{fig5.eps}		% isocompare.eps
+\includegraphics[trim = 0mm 120mm 20mm 20mm, clip, width=6in]{fig5.png}		% isocompare.png
 \caption{Comparison of the four isochrone systems and two atmosphere models used in this study. Grey dots are observed magnitudes from MOSAIC, NEWFIRM and 2MASS data described in section \ref{sec:data}. \emph{Blue:} 250 Myr Dartmouth isochrone. \emph{Red:} 178 Myr Padova isochrone. \emph{Purple:} 178 Myr PARSEC isochrone. \emph{Green:} 200 Myr Y$^2$ isochrone. All isochrones assume a distance of 870 pc, E($B-V$) = 0.22 and [Fe/H] = -0.21. Dashed lines indicate the position of the 0.7 M$_\odot$ model. \label{fig:isocompare}}
 \end{figure*}
 
@@ -230,7 +230,7 @@ Using the computed $\log g$ and $T_{\text{eff}}$ of each star in the isochrone, 
 A comparison of the final isochrones to the observed data is shown in figure \ref{fig:isocompare}. There is little difference between the models for stars more massive than 0.7 M$_\odot$ ($V \sim 17$, $J \sim 15$ in M35), and all models match closely to data in this regime. For low mass stars, the isochrones begin to separate on the CMD. Unfortunately, our $UBVRI$ data is not deep enough to reach most of this region. Instead, $BV$ photometry of \citet{2003AJ....126.1402K} is used. A zoomed-in CMD of the low-mass regions of interest are shown in figure \ref{fig:isocompare-zoomed}.
 
 \begin{figure*} \centering
-\includegraphics[trim = 0mm 5mm 5mm 0mm, clip, width=4.5in]{fig6.eps}		% isocompare-zoomed.eps
+\includegraphics[trim = 0mm 20mm 20mm 0mm, clip, width=4.5in]{fig6.png}		% isocompare-zoomed.png
 \caption{Zoomed-in CMDs of low mass portion of the main sequence. $J-K_S$ data from this work, $B-V$ data from \citet{2003AJ....126.1402K}. Black curves are hand-drawn empirical ridgelines. Dashed lines indicate the position of the 0.7 M$_\odot$ model. \label{fig:isocompare-zoomed}}
 \end{figure*}
 
